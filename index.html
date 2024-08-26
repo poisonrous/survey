@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Swiftie Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Swiftie Form</h1>
+<p id="description">Complete this form and help me learn HTML + CSS</p>
+<form id="survey-form">
+    <label class="legend" for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Taylor Swift"></label>
+    <label class="legend" for="email" id="email-label">Email: <input id="email" type="email" required placeholder="noreply@taylorswift.com"></label>
+    <legend class="legend">Gender:</legend>
+    <label class="inline" for="female">female<input type="radio" name="gender" id="female" value="f"></label>
+    <label class="inline" for="male">male<input type="radio" name="gender" id="male" value="m"></label>
+    <label class="inline" for="none">none<input type="radio" name="gender" id="none" value="n"></label>
+    <label class="inline" for="not">prefer not to say<input type="radio" name="gender" id="not" value="-"></label>
+    <hr>
+    <label class="legend" for="number" id="number-label">Favorite number: <input id="number" type="number" placeholder="13" min="0" max="99"></label>
+    <label class="legend" for="dropdown"> What's your favorite Taylor Swift album?
+        <select id="dropdown">
+            <option>Taylor Swift</option>
+            <option>Fearless</option>
+            <option>Speak Now</option>
+            <option>Red</option>
+            <option>1989</option>
+            <option>Reputation</option>
+            <option>Lover</option>
+            <option>folklore</option>
+            <option>evermore</option>
+            <option>Midnights</option>
+            <option>The Tortured Poets Department</option>
+        </select>
+    </label>
+    <hr>
+    <legend class="legend" >Have you seen any of these?</legend>
+    <label for="fearless">Journey to Fearless<input type="checkbox" id="fearless" value="1"></label>
+    <label for="speaknow">Speak Now World Tour Live<input type="checkbox" id="speaknow" value="2"></label>
+    <label for="1989">The 1989 World Tour Live<input type="checkbox" id="1989" value="3"></label>
+    <label for="reputation">Reputation Stadium Tour<input type="checkbox" id="reputation" value="4"></label>
+    <label for="americana">Miss Americana<input type="checkbox" id="americana" value="5"></label>
+    <label for="lover">City of Lover<input type="checkbox" id="lover" value="6"></label>
+    <label for="folklore">Folklore: The Long Pond Studio Sessions<input type="checkbox" id="folklore" value="7"></label>
+    <label for="eras">The Eras Tour<input type="checkbox" id="eras" value="8"></label>
+    <hr>
+    <label class="legend" for="any">What's your favorite TS lyric?<textarea id="any" cols="30" rows="4"></textarea></label>
+    <input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>
